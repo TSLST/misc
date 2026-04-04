@@ -93,9 +93,9 @@ This is the **primary architectural axis** of the product. Understanding which d
 
 | **Tier** | **Modality** | **Category** | **What It Detects** | **Readout** | **Approx. Unit Cost** | **v1 Priority** |
 |---|---|---|---|---|---|---|
-| 1 | Temperature / Humidity | ✅ Continuous Sensor | Cold-chain integrity; bacterial growth preconditions | Continuous | €20–€80 | **MUST** |
-| 2 | Air Quality — CO₂ / VOC / PM2.5 | ✅ Continuous Sensor | Ventilation quality; broad spoilage VOC signatures; airborne particulate load | Continuous | €50–€300 | **SHOULD** |
-| 3 | Camera (ML/RL visual inspection) | ✅ Continuous Sensor | Visual spoilage and surface contamination cues | Continuous (inference on frame) | €50–€300 (module) | **SHOULD** |
+| 1 | Temperature / Humidity | ✅ Continuous Sensor | Cold-chain integrity; bacterial growth preconditions | Continuous | 2–20€ (Low-cost enough? previously 20-80) | **MUST** |
+| 2 | Air Quality — CO₂ / VOC / PM2.5 | ✅ Continuous Sensor | Ventilation quality; broad spoilage VOC signatures; airborne particulate load | Continuous | 3–30€ (Low-cost enough? previously 50-300) | **SHOULD** |
+| 3 | Camera (ML/RL visual inspection) | ✅ Continuous Sensor | Visual spoilage and surface contamination cues | Continuous (inference on frame) | €20–€300 (module) | **SHOULD** |
 | 4 | Electronic Nose (e-nose array) | ✅ Continuous Sensor *(with calibration)* | VOC metabolite patterns associated with specific bacterial genera; closer to bacterial growth proxy than generic AQ | Minutes per classification | €200–€800 | **COULD** |
 | 5 | Impedance Biosensor | 🔭 Research → Continuous Sensor | Bacterial biofilm formation on electrode surface; semi-continuous growth detection without consumable | Semi-continuous | Research-grade; target < €500 | **FUTURE / Launch Trigger** |
 | 6 | Quartz Crystal Microbalance (QCM) | 🔭 Research → Continuous Sensor | Nanogram-level mass changes from bacterial adhesion on coated surface; continuous biofilm proxy | Semi-continuous | Research-grade | **FUTURE / Launch Trigger** |
