@@ -3,9 +3,11 @@ Type: Doc
 Use: README file for miscellaneous projets GitHub repository.
 Tags: !!str "#readme #projects #github"
 Creation: 2026-06-22
-Update: 2026-06-22
+Update: 2026-07-02
 Contributors: [神縁]
 ---
+
+[Version en francais](LISEZMOI.md)
 
 # Miscellaneous Projects
 ================================================================================
@@ -36,8 +38,10 @@ Spiritually I am all in favor of shared commons and knowledge, TSLST is an attem
 ### VBA Stringbuilder class
 ###
 
+[Stringbuilder](cStringBuilder.cls)
+
 This object is out of my usual library of functions. It is usually directly included in the library I developped as its use is really important in Access SQL manipulations for example.
-Here I present a separated class, no error management and no usage of the *library* builtin functions to run it in singletons or to simplify it in any way.
+Here I present a separated class, no error pile management and no usage of the *library* builtin functions to run it in singletons or to simplify it in any way.
 
 #### Showing formatting guidelines 
 
@@ -48,7 +52,7 @@ There were already a few VBA limitations that were really annoying (Such as opti
 
 #### Usability
 
-This snippet proved tramendously useful in solving my first real job: cutting cost on user loading of pages.<br>
+This snippet proved tramendously useful in solving my first real job: cutting cost on loading of pages for users.<br>
 The loading time was overly long for a wrong reason: concatenation of strings using the `&` operator. At every operation a new string is created and the memory allocation and garbage collection Times pile up with iterations.
 Using `$mid` builtin function solves this problem really cleverly. Rather than create a string variable containing only the string to write, this create a much larger space ready to allocate more text by replacing blank characters and keeping track of where the actual string is located. Blank chars are left available at the very end for new concatenations. The size of the buffer (Leading string and tailing blanks) augments exponentially by doubling its size every time needed. So in the meantime of 10 `&` concatenations (including initial string) you pretty much can concatenate up to $34*2^9=17,408$ characters, 34 being the number of characters for the initial size of the buffer.
 
@@ -67,6 +71,6 @@ This code is interesting for two reasons:
 ## Incoming
 -------------------------
 
-I might post a prd or two, some python scripts that I use these days, harness scripts for local llm on old hardware and 0 cost, papers on different subjects I work on such as applying AI to simulated environment: Quake 3 would be the next level of AI to deploy as the fuzzy logic bots are now outdated (But first I need to master its source code and install stereography).
+I might post a prd or two, some python scripts that I use these days while I am working on a complete personal toolkit library, harness scripts for local llm on old hardware and 0 cost, papers on different subjects I work on $-$ such as applying AI to simulated environment: a 3D simulated env like Quake 3 would be the next level of AI to deploy as the fuzzy logic bots are now outdated (But first I need to master its source code and install stereography).
 
 ***
