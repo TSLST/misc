@@ -76,11 +76,11 @@ Le problème, c'est que Git ne gère pas correctement les liens symboliques et n
 J'ai donc créé un petit script Bash pour résoudre ce problème de manière élégante.
 Dans `.bash_aliases`:
 ```bash
-alias gsc='git_symlink_commit.sh'
+alias gsc='/chemin/vers/git_symlink_commit.sh'
 ```
 Utilisation:
 ```bash
-cd /git/folder
+cd /git/dossier
 gsc "MESSAGE_DE_COMMIT"
 ```
 

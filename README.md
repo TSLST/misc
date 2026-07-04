@@ -76,7 +76,7 @@ The problem is that git does not manage the symlinks properly and only uploads a
 I made a short bash script to resolve this issue elegantly.
 In `.bash_aliases`:
 ```bash
-alias gsc='git_symlink_commit.sh'
+alias gsc='/path/to/git_symlink_commit.sh'
 ```
 Usage:
 ```bash
