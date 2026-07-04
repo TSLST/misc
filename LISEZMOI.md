@@ -23,18 +23,6 @@ Ce dépôt a pour but de présenter divers extraits de code ou travaux sur lesqu
 -------------------------
 
 ---
-### TSLST
-###
-
-TSLST signifie **Traced Source Licensing Standard Terminology** (Terminologie Standard de Licence à Source Tracée). Alors que l'analyse et le développement agentiques prennent une importance croissante dans l'expansion actuelle du web, la licence MIT ne comportait pas deux caractéristiques que cette licence entend apporter:
-- Garantir la **responsabilité** des agents: les agents IA en sont à leurs balbutiements, tout ce qu'ils produisent relève de la responsabilité de quelqu'un.
-- La **traçabilité** des idées: créditer la source, à la fois de manière **légale** et en tant que **norme communautaire**, peut permettre de cartographier les **influences** des orientations positives du développement, d'accorder un peu de **crédit** informel aux concepteurs et de faire le lien avec des implémentations similaires. Cela est difficile à visualiser pour l'instant, mais cela ne fera que s'étendre progressivement avec le temps, à mesure que les données seront traitées à plus grande échelle.
-
-Spirituellement, je suis tout à fait favorable aux biens communs partagés et au partage de connaissances ; TSLST est une tentative de conserver la permissivité et l'ouverture du code source tout en garantissant de bonnes pratiques et des recours légaux en cas d'usage abusif. TSLST ne peut être utilisée que sur des projets suffisamment éloignés de l'influence initiale pour annuler les licences MIT précédentes ; elle sera principalement utilisée sur des choses que j'ai développées à partir de zéro.
-
-[LICENCE](manifesto_tslst)
-
----
 ### Classe VBA Stringbuilder
 ###
 
@@ -66,6 +54,37 @@ Puissance de 2 instantanée pour l'optimisation.
 Ce code est intéressant pour deux raisons:
 - D'abord, la technique d'expansion de taille de tableau par incréments de tampon en puissances de deux, qui permettra d'économiser une quantité considérable de calculs dans d'autres domaines.
 - Le calcul des puissances de 2 par masque de bits est également une astuce ingénieuse pour gagner en efficacité de calcul.
+
+---
+### TSLST
+###
+
+TSLST signifie **Traced Source Licensing Standard Terminology** (Terminologie Standard de Licence à Source Tracée). Alors que l'analyse et le développement agentiques prennent une importance croissante dans l'expansion actuelle du web, la licence MIT ne comportait pas deux caractéristiques que cette licence entend apporter:
+- Garantir la **responsabilité** des agents: les agents IA en sont à leurs balbutiements, tout ce qu'ils produisent relève de la responsabilité de quelqu'un.
+- La **traçabilité** des idées: créditer la source, à la fois de manière **légale** et en tant que **norme communautaire**, peut permettre de cartographier les **influences** des orientations positives du développement, d'accorder un peu de **crédit** informel aux concepteurs et de faire le lien avec des implémentations similaires. Cela est difficile à visualiser pour l'instant, mais cela ne fera que s'étendre progressivement avec le temps, à mesure que les données seront traitées à plus grande échelle.
+
+Spirituellement, je suis tout à fait favorable aux biens communs partagés et au partage de connaissances ; TSLST est une tentative de conserver la permissivité et l'ouverture du code source tout en garantissant de bonnes pratiques et des recours légaux en cas d'usage abusif. TSLST ne peut être utilisée que sur des projets suffisamment éloignés de l'influence initiale pour annuler les licences MIT précédentes ; elle sera principalement utilisée sur des choses que j'ai développées à partir de zéro.
+
+[LICENCE](manifesto_tslst)
+
+---
+### Git et liens symboliques
+###
+
+J'ai tendance à utiliser des liens symboliques pour accéder au même fichier depuis différents points $-$ ce qui est particulièrement utile si le fichier est utilisé dans plusieurs projets $-$ cela me permet de centraliser les documents.
+Le problème, c'est que Git ne gère pas correctement les liens symboliques et ne télécharge sur GitHub que le lien symbolique plutôt que le fichier original.
+J'ai donc créé un petit script Bash pour résoudre ce problème de manière élégante.
+Dans `.bash_aliases`:
+```bash
+alias gsc='git_symlink_commit.sh'
+```
+Utilisation:
+```bash
+cd /git/folder
+gsc "MESSAGE_DE_COMMIT"
+```
+
+[Symlink commits](git_symlink_commit.sh)
 
 -------------------------
 ## À venir

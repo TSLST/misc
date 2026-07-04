@@ -23,18 +23,6 @@ This repository is intended to display various snippets of code or work that I a
 -------------------------
 
 ---
-### TSLST
-###
-
-TSLST stands for **Traced Source Licensing Standard Terminology**. As agentic parsing and developping takes more and more importance in today's web expansion, MIT license was missing two features that this licensing intends to solve:
-- Ensuring **accountability** of agents: IA agents are in their infancy, whatever they produce are anyone's responsability.
-- **Tracability** of ideas: crediting the source both in **legal** ways and as a **community standard** may allow to map **influences** of positive directions in development, may give a bit of informal **credit** to conceptors and link back to similar implementations. This is hard to visualize for now but will only gradually expand over Time as data is processed at larger scale.
-
-Spiritually I am all in favor of shared commons and knowledge, TSLST is an attempt at keeping permissivemess and open sourcing while ensuring good practices and legal claims in case of improper usage. TSLST can only be used at projects that separate enough from the initial influence to void the previous MIT licenses, it will mostly be used on things that I developped from scratch.
-
-[LICENSE](manifesto_tslst)
-
----
 ### VBA Stringbuilder class
 ###
 
@@ -66,6 +54,37 @@ Instant power of 2 for optimization.
 This code is interesting for two reasons:
 - First the array size expansion technique with buffer increments by power of two which will save a tremendous amount of computation in other areas.
 - The bitmask power of two computations is also a clever trick to win some computation efficiency.
+
+---
+### TSLST
+###
+
+TSLST stands for **Traced Source Licensing Standard Terminology**. As agentic parsing and developping takes more and more importance in today's web expansion, MIT license was missing two features that this licensing intends to solve:
+- Ensuring **accountability** of agents: IA agents are in their infancy, whatever they produce are anyone's responsability.
+- **Tracability** of ideas: crediting the source both in **legal** ways and as a **community standard** may allow to map **influences** of positive directions in development, may give a bit of informal **credit** to conceptors and link back to similar implementations. This is hard to visualize for now but will only gradually expand over Time as data is processed at larger scale.
+
+Spiritually I am all in favor of shared commons and knowledge, TSLST is an attempt at keeping permissivemess and open sourcing while ensuring good practices and legal claims in case of improper usage. TSLST can only be used at projects that separate enough from the initial influence to void the previous MIT licenses, it will mostly be used on things that I developped from scratch.
+
+[LICENSE](manifesto_tslst)
+
+---
+### Symlink Commit
+###
+
+I tend to use symlinks to access the same file from different endpoints, especially useful if the file is used within many projects and it helps centralize documents.
+The problem is that git does not manage the symlinks properly and only uploads a symbolic link to GitHub rather than the original file.
+I made a short bash script to resolve this issue elegantly.
+In `.bash_aliases`:
+```bash
+alias gsc='git_symlink_commit.sh'
+```
+Usage:
+```bash
+cd /git/folder
+gsc "COMMIT_MESSAGE"
+```
+
+[Symlink commits](git_symlink_commit.sh)
 
 -------------------------
 ## Incoming
