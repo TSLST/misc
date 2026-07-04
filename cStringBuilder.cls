@@ -1,1 +1,1 @@
-/home/concepteur/Documents/manifesto_tslst.md
+/home/opt/scripts/vba/cStringBuilder.cls

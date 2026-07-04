@@ -1,1 +1,1 @@
-/home/concepteur/Documents/manifesto_tslst.md
+/home/opt/scripts/bash/git_symlink_commit.sh
