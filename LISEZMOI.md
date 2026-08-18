@@ -3,7 +3,7 @@ Type: Doc
 Use: Fichier LISEZMOI pour le dépôt GitHub de projets divers.
 Tags: !!str "#lisezmoi #projets #github"
 Creation: 2026-06-22
-Update: 2026-07-02
+Update: 2026-08-18
 Contributors: [神縁]
 ---
 
