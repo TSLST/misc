@@ -17,7 +17,7 @@ Option ClassModule
 ' Creation: 2012-06-09
 ' Update: 2026-06-18
 ' Contributors: [神縁]
-' Version: !!str 1.1.2
+' Version: !!str 1.1.3
 ' ---
 
 '= Imports: Null 
