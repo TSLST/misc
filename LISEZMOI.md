@@ -65,7 +65,7 @@ TSLST signifie **Traced Source Licensing Standard Terminology** (Terminologie St
 
 Spirituellement, je suis tout à fait favorable aux biens communs partagés et au partage de connaissances ; TSLST est une tentative de conserver la permissivité et l'ouverture du code source tout en garantissant de bonnes pratiques et des recours légaux en cas d'usage abusif. TSLST ne peut être utilisée que sur des projets suffisamment éloignés de l'influence initiale pour annuler les licences MIT précédentes ; elle sera principalement utilisée sur des choses que j'ai développées à partir de zéro.
 
-[LICENCE](manifesto_tslst)
+[LICENCE](manifesto_tslst.md)
 
 ---
 ### Git et liens symboliques
