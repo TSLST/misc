@@ -397,7 +397,7 @@ Public Sub Test_m_NextPowerOf2()
     Dim lUBound As Long
 
     #If VBA7 And Win64 Then
-        const cstMAX_VALUE = 4611686018427387904 '// exactly 2^62, valid value limit
+        const cstMAX_VALUE = 4611686018427387904^ '// exactly 2^62, valid value limit
     #Else
         const cstMAX_VALUE = 1073741824 '// Max 32-bit Long
     #End If
@@ -406,7 +406,7 @@ Public Sub Test_m_NextPowerOf2()
     vaTestCases = Array( _
         '// Error cases
         Array(-1, "Err"),                   '// Negative input
-        Array(-9223372036854775808, "Err"), '// Minimum LongLong
+        Array(-9223372036854775808^, "Err"), '// Minimum LongLong
 
         '// Zero edge case
         Array(0, 1),
